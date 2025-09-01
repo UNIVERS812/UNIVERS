@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+     font-family:Poppins;
 }
+
 body{
     padding: 0;
     margin: 0;
@@ -243,6 +243,7 @@ color: aqua;
     align-items: center;  
     top:0;
     left: 0; 
+     transition: left 1s ease ;
 }
 
 .barderecherche{
@@ -267,6 +268,9 @@ color: aqua;
     border: solid aqua;
 }
 .menu{
+    display: none;
+}
+.over{
     display: none;
 }
 @media (max-width:750px) {
@@ -387,6 +391,52 @@ header{
 }
 .fa-brands {
     font-size: 15px;
+}
+.over{
+   display=none;  
+}
+.bar3{
+    background-color: black;
+    height: 80%;
+    display: grid;
+    grid-auto-flow: row;
+    overflow-y: auto;
+    width: 80%;
+   
+
+  
+}
+.over a{
+ text-decoration: none;
+ background-color: black;
+ color: aqua;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+ border-bottom: 1px solid gray;
+ height: 50px;
+ 
+}
+.close{
+    position: absolute;
+    top: 10px;
+    font-size: 35px;
+    background: none;
+    color: aqua;
+    border: none;
+}
+.close :hover{
+    color: gray;
+}
+.active{
+background-color: black;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   height: 100%;
+   position: fixed;
+    width: 80%;
+  transition: left 0.3s ease ;
 }
 
 }
