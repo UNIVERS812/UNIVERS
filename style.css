@@ -53,6 +53,7 @@ body{
   align-items: center;
 }
 
+
 #id1{
     background-color: black;
     width: 50px;
@@ -241,9 +242,7 @@ color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;  
-    top:0;
-    left: 0; 
-     transition: left 1s ease ;
+    transition: left 1s ease ;
 }
 
 .barderecherche{
@@ -273,36 +272,71 @@ color: aqua;
 .over{
     display: none;
 }
+.carte{
+    position: relative;
+}
+.vf{
+    position: absolute;
+    background-color: red;
+    height: 25px;
+    display: flex;
+ font-weight: bold;
+ color: white;
+    justify-content: center;
+    align-items: center;
+    top:172px;
+    width: 100%;
+}
 @media (max-width:750px) {
 
-    .grille{
+.grille{
         background-color: 0;
         grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
         width: 100%;
         margin: 0;
          gap: 10px;
         }
+    .barderecherche{
+    background-color: 0;
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    gap: 2px;
+    height: 100%;
+    padding: 0;
+}
+#zonederecherche{
+    height: 83px;
+}
+
 .carte{
  width: 140px;
  margin-left: 25px;
  text-decoration: none;
  background-color: 0;
+ z-index: 1;
 }
 .nav2{
-width: 20%;
-margin: 0;
-gap: 0;
+width: 50%;
+margin-right: 2px;
+gap: 5px;
 padding: 0;
+background-color:0;
  
 }
 .nav2 a{
-    font-size: 10px;
-   padding: 0;
+    font-size: 15px;
    margin-right: 5px;
+   background-color: 0;
 }
 h1{
-font-size: 17px;
-width: 40%;
+font-size: 16px;
+width: 50%;
+background-color: 0;
+margin-left: 27px;
+display: flex;
+height: 100%;
+align-items: center;
 
 }
 .logo{
@@ -369,25 +403,17 @@ background-color: 0;
 }
 
 header{
-   
     height: 60px;
     justify-content: space-between;
    align-items: center;
- 
-}
-.barderecherche :{
-    width: 90%;
-    border-radius: 10px;
-    outline: none;  
 }
 
-   
 .bar2{
     width: 97%;
     margin-left: 0;
-    gap: 100px;
     margin-top: 10px;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: 0;
 }
 .fa-brands {
     font-size: 15px;
@@ -402,8 +428,6 @@ header{
     grid-auto-flow: row;
     overflow-y: auto;
     width: 80%;
-   
-
   
 }
 .over a{
@@ -417,6 +441,7 @@ header{
  height: 50px;
  
 }
+
 .close{
     position: absolute;
     top: 10px;
@@ -436,6 +461,7 @@ background-color: black;
    height: 100%;
    position: fixed;
     width: 80%;
+       z-index: 2;
   transition: left 0.3s ease ;
 }
 
