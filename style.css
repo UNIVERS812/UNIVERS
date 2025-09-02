@@ -2,9 +2,7 @@
     box-sizing: border-box;
      font-family:Roboto;
 }
-a :hover{
-    background: none;
-}
+
 body{
     padding: 0;
     margin: 0;
@@ -307,6 +305,13 @@ color: aqua;
     height: 100%;
     padding: 0;
 }
+.lienimage :hover{
+    background-color: 0;
+
+}
+.liennom :hover{
+    background-color: 0;
+}
 #zonederecherche{
     height: 83px;
 }
@@ -330,6 +335,9 @@ background-color:0;
     font-size: 15px;
    margin-right: 5px;
    background-color: 0;
+}
+.nav2 a :hover{
+    background-color: 0;
 }
 h1{
 font-size: 16px;
